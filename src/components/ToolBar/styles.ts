@@ -15,9 +15,12 @@ export const ToolbarNav = styled.nav`
   height: 100%;
   display: flex;
   padding: 0 1rem;
+  font-size: 1.5rem;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.5rem;
+  @media (max-width: 769px) {
+    justify-content: flex-start;
+  }
 `
 
 

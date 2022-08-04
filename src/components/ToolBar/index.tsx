@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import * as S from './styles'
 
+import { DrawerButton } from 'components'
 
 const ToolBar = () => (
   <S.ToolBarHeader>
     <S.ToolbarNav>
+      <DrawerButton click={() => null} />
       <S.ToolbarLogo>
         <Link href="/">
           Wilson Junior
