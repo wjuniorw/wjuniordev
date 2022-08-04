@@ -4,9 +4,11 @@ import Image from 'next/image'
 import { Main } from 'components'
 
 
-export default function Home() {
+function Home() {
   return (
     <Main>
     </Main>
   )
 }
+
+export default Home

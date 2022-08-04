@@ -5,6 +5,8 @@ import { ThemeProvider } from "styled-components"
 import GlobalStyles from 'styles/global'
 import { darkTheme, lightTheme } from 'styles/ThemeConfig'
 
+import { ToolBar } from 'components'
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={darkTheme}>
@@ -17,6 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name='theme-color' content='#06092B' />
       </Head>
       <GlobalStyles />
+      <ToolBar />
       <Component {...pageProps} />
     </ThemeProvider>
   )
