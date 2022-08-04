@@ -1,18 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
-
-export const lightTheme = {
-  body: '#FFF',
-  text: '#363537',
-  toggleBorder: '#FFF',
-  background: '#363537',
-}
-
-export const darkTheme = {
-  body: '#363537',
-  text: '#FAFAFA',
-  toggleBorder: '#6B8096',
-  background: '#999',
-}
+import { LightTheme } from './light'
+import { DarkTheme } from './dark'
 
 export const ThemeStyles = createGlobalStyle<Theme>`
   body {
@@ -22,8 +10,11 @@ export const ThemeStyles = createGlobalStyle<Theme>`
     transition: all 0.50s linear;
   }
 `
-type Theme = typeof lightTheme
+type Theme = LightTheme & DarkTheme
 
 declare module 'styled-components' {
   export interface DefaultTheme extends Theme {}
 }
+
+export { default as lightTheme } from './light'
+export { default as darkTheme } from './dark'

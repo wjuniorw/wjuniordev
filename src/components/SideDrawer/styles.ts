@@ -30,11 +30,9 @@ export const SideDrawerUl = styled.ul`
 export const SideDrawerItem = styled.li`
   margin: 0.5rem 0;
   border-bottom: solid 1px #22bed9;
-  ${'' /* box-shadow: 0 0px 5px #22bad9; */}
-  ${'' /* box-shadow: 1px 1px 5px -3px rgba(34,150,200, 0.5); */}
   a {
     color: #22bad9;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-decoration: none;
   }
   a:hover,
