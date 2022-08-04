@@ -6,6 +6,7 @@ import GlobalStyles from 'styles/global'
 import { darkTheme, lightTheme } from 'styles/ThemeConfig'
 
 import { ToolBar, SideDrawer } from 'components'
+import { Backdrop } from 'components/BackDrop/styles'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalStyles />
       <ToolBar />
       <SideDrawer show={false} />
+      { <Backdrop /> }
       <Component {...pageProps} />
     </ThemeProvider>
   )
