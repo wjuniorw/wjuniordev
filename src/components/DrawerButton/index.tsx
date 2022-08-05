@@ -2,9 +2,6 @@ import { useContext } from 'react'
 import * as S from './styles'
 
 import { ApplicationCtx } from 'context'
-interface IDrawerButton {
-  click: () => void
-}
 
 const DrawerButton = () => {
   const { toggleDrawer } = useContext(ApplicationCtx)

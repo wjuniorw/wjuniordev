@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ToggleDrawer = styled.button`
   @media (min-width: 769px) {
-    display: none;
+    ${'' /* display: none; */}
   }
   :focus {
     outline: none;
