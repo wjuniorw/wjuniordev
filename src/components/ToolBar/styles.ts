@@ -7,8 +7,9 @@ export const ToolBarHeader = styled.header`
   height: 56px;
   position: fixed;
   background: #2c3e50;
-  font-family: Roboto,Helvetica,Arial,sans-serif;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
 `
 
 export const ToolbarNav = styled.nav`
@@ -23,12 +24,8 @@ export const ToolbarNav = styled.nav`
   }
 `
 
-
 export const ToolbarLogo = styled.div`
-  margin-left: 1rem;
-  @media (min-width: 769px) {
-    margin-left: 0;
-  }
+  margin-left: 2rem;
   a {
     color: #64ffda;
     font-size: 2rem;
@@ -49,9 +46,12 @@ export const ToolbarNavItens = styled.div`
   a {
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
   }
-  a:hover, a:active {
-    color: rgb(3, 231, 255);
+  a:hover,
+  a:active {
+    color: #64ffda;
+    ${'' /* color: rgb(3, 231, 255); */}
   }
   @media (max-width: 768px) {
     display: none;

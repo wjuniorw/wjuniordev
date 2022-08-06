@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import { Main } from 'components'
+import { Main, Intro } from 'components'
 
 
 function Home() {
   return (
     <Main>
+      <Intro />
     </Main>
   )
 }

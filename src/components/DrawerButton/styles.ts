@@ -7,18 +7,18 @@ export const ToggleDrawer = styled.button`
   :focus {
     outline: none;
   }
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 24px;
   width: 30px;
+  height: 24px;
   border: none;
+  display: flex;
   cursor: pointer;
+  flex-direction: column;
   background: transparent;
+  justify-content: space-around;
 `
 
 export const ButtonLine = styled.div`
-  width: 30px;
+  width: 25px;
   height: 2px;
   background: #fff;
 `

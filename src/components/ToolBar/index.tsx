@@ -6,12 +6,14 @@ import { DrawerButton } from 'components'
 const ToolBar = () => (
   <S.ToolBarHeader>
     <S.ToolbarNav>
-      <DrawerButton click={() => null} />
-      <S.ToolbarLogo>
-        <Link href="/">
-          Wilson Junior
-        </Link>
-      </S.ToolbarLogo>
+      <div style={{ display: 'flex' }}>
+        <DrawerButton />
+        <S.ToolbarLogo>
+          <Link href="/">
+            WILSON JUNIOR
+          </Link>
+        </S.ToolbarLogo>
+      </div>
       <S.ToolbarNavItens>
         <ul>
           <li>

@@ -1,10 +1,10 @@
 import * as S from './styles'
 
-const Main = () => (
+const Main = ({ children }) => (
   <S.Container>
-    <S.Title>
-      Some Text here...
-    </S.Title>
+    {
+      children
+    }
   </S.Container>
 )
 export default Main
