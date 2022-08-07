@@ -9,7 +9,7 @@ export const CirclePicture = styled.div`
   border-radius: 100%;
   background-color: #2c3e50;
 `
-// export const Picture = styled.img`
+
 export const Picture = styled(Image)`
   border: none;
   width: 280px;
@@ -17,6 +17,5 @@ export const Picture = styled(Image)`
   padding: 10px;
   position:relative;
   border-radius: 50%;
-  background: #22bed9;
   background-size: contain;
 `
