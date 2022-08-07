@@ -1,12 +1,11 @@
-
 import * as S from './styles'
 import { Picture } from 'components'
 
 import img from 'assets/wjuniorw.png'
 
 const IntroSection = () => {
-  img.height = '280px'
-  img.width = '280px'
+  img.height = 280
+  img.width = 280
   return (
     <S.IntroContainer>
       <S.IntroHeader>

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react'
+import React, { createContext, useState, useContext, ReactNode } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { darkTheme, lightTheme } from 'styles/ThemeConfig'
 
@@ -58,7 +58,7 @@ export const Provider = ({ children }: { children: React.ReactNode }) => {
   )
 }
 
-export const ThemeConsumer = ({ children }) => {
+export const ThemeConsumer = ({ children }: { children: ReactNode }) => {
   const { currentTheme } = useContext(ApplicationCtx)
   return <ThemeProvider theme={currentTheme}>{children}</ThemeProvider>
 }
