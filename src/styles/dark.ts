@@ -10,6 +10,7 @@ const darkTheme = {
   background: '#999',
   intro: {
     title: {
+      color: '#FAFAFA',
       font: '"Open Sans", sans-serif',
     },
     header: {
