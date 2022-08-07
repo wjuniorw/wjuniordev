@@ -17,9 +17,9 @@ type Current = 'light' | 'dark'
 export type ApplicationCtxType = typeof initialState & {
   dark?: DarkTheme
   light?: LightTheme
+  toggleDrawer?: () => void
   currentTheme: DarkTheme | LightTheme
   chooseTheme?: (current: Current) => void
-  toggleDrawer?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export const Provider = ({ children }: { children: React.ReactNode }) => {
@@ -30,9 +30,7 @@ export const Provider = ({ children }: { children: React.ReactNode }) => {
     light: lightTheme,
   }
 
-  const toggleDrawer = () => {
-    toggle(!opened)
-  }
+  const toggleDrawer = () => toggle(!opened)
 
   const chooseTheme = (current: Current) => {
     const themes = {

@@ -6,7 +6,7 @@ import { ApplicationCtx } from 'context'
 const DrawerButton = () => {
   const { toggleDrawer } = useContext(ApplicationCtx)
   return (
-    <S.ToggleDrawer onClick={() => toggleDrawer}>
+    <S.ToggleDrawer onClick={toggleDrawer}>
       <S.ButtonLine />
       <S.ButtonLine />
       <S.ButtonLine />

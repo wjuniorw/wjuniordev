@@ -7,7 +7,7 @@ const BackDrop = () => {
   if (!opened) {
     return null
   }
-  return <S.Backdrop onClick={() => toggleDrawer} />
+  return <S.Backdrop onClick={toggleDrawer} />
 }
 
 export default BackDrop
