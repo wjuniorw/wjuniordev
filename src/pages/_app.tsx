@@ -5,7 +5,7 @@ import GlobalStyles from 'styles/global'
 
 import * as AppCtx from 'context'
 
-import { ToolBar, SideDrawer, BackDrop } from 'components'
+import { ToolBar, SideDrawer, BackDrop, Footer } from 'components'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -27,6 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <SideDrawer />
         <BackDrop />
         <Component {...pageProps} />
+        <Footer />
       </AppCtx.ThemeConsumer>
     </AppCtx.Provider>
   )

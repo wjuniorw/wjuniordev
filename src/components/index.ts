@@ -1,6 +1,7 @@
 
 export { default as Main } from './Main'
 export { default as Intro } from './Intro'
+export { default as Footer } from './Footer'
 export { default as Picture } from './Picture'
 export { default as ToolBar } from './ToolBar'
 export { default as BackDrop } from './BackDrop'
