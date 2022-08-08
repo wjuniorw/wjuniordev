@@ -3,12 +3,19 @@ import * as S from './styles'
 const Footer = () => (
   <S.FooterContainer>
     <S.FooterItemTop>
-      <S.BackToTopBtn>Ir para o topo</S.BackToTopBtn>
+      <S.BackToTopBtn href='/#'>
+        Ir para o topo <S.IconUp />
+      </S.BackToTopBtn>
     </S.FooterItemTop>
     <S.FooterItemMiddle>
-      Copyright © 2018 - Wilson Junior - wjuniorwebdev@gmail.com
+      Copyright © 2022 - Wilson Junior -
+      <S.Email href='mailto:wjuniorwebdev@gmail.com'>
+        wjuniorwebdev@gmail.com
+      </S.Email>
     </S.FooterItemMiddle>
-    <S.FooterItemBottom>links</S.FooterItemBottom>
+    <S.FooterItemBottom>
+      <S.FootLink href='/#'>links</S.FootLink>
+    </S.FooterItemBottom>
   </S.FooterContainer>
 )
 

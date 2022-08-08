@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import styled from 'styled-components'
+import { ChevronUp } from '@styled-icons/boxicons-solid'
 
 export const FooterContainer = styled.footer`
   width: 100%;
@@ -27,4 +29,17 @@ export const FooterItemBottom = styled(FooterItem)`
   justifycontent: flex-start;
 `
 
+export const FootLink = styled.a`
+  color: ${({ theme }) => theme.footer.secondLink};
+`
+
 export const BackToTopBtn = styled.a``
+export const Email = styled.a`
+  margin-left: 5px;
+  color: ${({ theme }) => theme.footer.link};
+`
+
+export const IconUp = styled(ChevronUp)`
+  width: 20px;
+  color: ${({ theme }) => theme.footer.text};
+`

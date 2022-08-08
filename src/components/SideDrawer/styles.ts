@@ -13,8 +13,8 @@ export const SideDrawerNav = styled.nav<INav>`
   position: fixed;
   max-width: 400px;
   padding-top: 16px;
-  background: #fafafa;
   transition: transform 0.3s ease-out;
+  background: ${({ theme }) => theme.drawer.background};
   transform: translateX(${({ show }) => (show ? '0' : '-100%')});
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 `
@@ -29,12 +29,12 @@ export const SideDrawerItem = styled.a`
   width: 100%;
   height: 50px;
   padding: 16px;
-  color: #757575;
   font-size: 1.6rem;
   align-items: center;
   text-decoration: none;
   :hover,
   :active {
-    background: #e0e0e0;
-  }
+    background: ${({theme}) => theme.drawer.item.backgroud};
+  };
+  color: ${({theme}) => theme.drawer.text};
 `
