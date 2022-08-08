@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const IntroContainer = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   display: flex;
   margin-top: 25px;
   align-items: center;
