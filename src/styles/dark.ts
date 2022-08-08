@@ -1,6 +1,6 @@
 
 const colors = {
-  primaryDark: '#2c3e50',
+  primary: '#2c3e50',
 }
 
 const darkTheme = {
@@ -14,9 +14,13 @@ const darkTheme = {
       font: '"Open Sans", sans-serif',
     },
     header: {
-      background: colors.primaryDark,
+      background: colors.primary,
     },
     background: 'rgb(24, 188, 156) none repeat scroll 0% 0% / cover',
+  },
+  footer: {
+    text: '#9e9e9e',
+    background: colors.primary,
   }
 }
 
