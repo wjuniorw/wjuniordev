@@ -1,4 +1,4 @@
-This is my [Brand new site](http://wjunior.dev/) project made with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my [Brand new site](http://wjunior.dev.br/) project made with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 ---
 ## Getting Started
 
